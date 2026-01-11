@@ -41,8 +41,8 @@ services:
     ports:
       - 8004:8080
     environment: # https://docs.openwebui.com/getting-started/env-configuration#default_models
-      - OLLAMA_BASE_URLS=http://10.0.0.252:8003
-      - WEBUI_URL=http://10.0.0.252:8004
+      - OLLAMA_BASE_URLS=http://host.docker.internal:8003
+      - WEBUI_URL=http://host.docker.internal:8004
       - DEFAULT_MODELS=llama3.1,mistral
       - ENV=dev
       - WEBUI_AUTH=False
